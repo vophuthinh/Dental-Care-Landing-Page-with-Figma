@@ -174,19 +174,20 @@ a {
     height: 410px;
 }
 
-/*====================services====================*/
-.services {
+/* =================== service ========================== */
+.service {
     padding: 170px 0;
+    background: #fff;
 }
 
-.services__heading,
-.services__desc {
+.service__heading,
+.service__desc {
     text-align: center;
 }
 
-.section-desc {
+.service__desc {
     width: 468px;
-    margin: 0 auto;
+    margin: 18px auto 0;
 }
 
 .service__row {
@@ -209,9 +210,9 @@ a {
     width: 470px;
     border-radius: 10px;
     background: #fff;
-    align-items: center;
     transition: 0.25s;
 }
+
 .service-item:hover {
     position: relative;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
@@ -221,6 +222,7 @@ a {
     color: #fff;
     background: #2e80ce;
 }
+
 .service-item__icon {
     width: 60px;
     height: 60px;
@@ -228,8 +230,8 @@ a {
     background: #eff6fd;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     margin-right: 19px;
     transition: 0.25s;
@@ -237,16 +239,71 @@ a {
 
 .service-item__heading {
     color: #10375c;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
+    line-height: normal;
 }
 
 .service-item__desc {
+    margin-top: 8px;
     color: #575f66;
-    font-size: 1.6;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.service__btn {
+    margin-top: 55px;
+}
+
+/* ===================work==================== */
+.work {
+    background: #f6fbff;
+    padding: 100px 0;
+}
+
+.work__desc {
+    width: 468px;
+}
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.work-item {
+    padding: 43px;
+    border-radius: 4px;
+    background: #fff;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
 }
-.service__btn {
-    margin-top: 55px;
+
+.work-item__more {
+    margin-top: 18px;
+    display: inline-block;
+    color: #2e80ce;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }
